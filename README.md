@@ -56,7 +56,7 @@ This method is not convenient if you use a lot of variables. In that case, you c
 
 		if(user===""){
 			setUser("John Doe");
-		}else if(hello=="hello"){
+		}else if(hello=="Hello"){
 			setHello("Hello, "+user+"!");
 		}
 	}

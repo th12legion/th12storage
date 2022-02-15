@@ -13,7 +13,9 @@
   "keywords": [
     "React",
     "State",
-    "Manager"
+    "Manager",
+    "Global",
+    "js"
   ],
   "author": "th12legion",
   "license": "ISC",
