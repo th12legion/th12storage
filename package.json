@@ -1,0 +1,22 @@
+{
+  "name": "th12storage",
+  "version": "1.0.0",
+  "description": "React State Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/th12legion/th12storage.git"
+  },
+  "keywords": [
+    "React", "State", "Manager"
+  ],
+  "author": "th12legion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/th12legion/th12storage/issues"
+  },
+  "homepage": "https://github.com/th12legion/th12storage#readme"
+}

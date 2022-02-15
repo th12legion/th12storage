@@ -18,7 +18,7 @@ To be able to change the value, you have to create a method to change it.
 	import { useStorage } from "th12storage";
 
 	function Test(){
-		let [hello, setHello] = useStorage("hello", "Hello");
+		let [hello, setHello] = useStorage("hello", "Hello", true);
 
 		setHello("Hello, world!");
 	}
@@ -33,10 +33,10 @@ You need to create function trigger.
 
 	function Test(){
 		let [st, rst] = useState(0);
-		let [hello, setHello] = useStorage("hello", "Hello");
+		let [hello, setHello] = useStorage("hello", "Hello", true);
 
 		if(hello==="Hello"){
-			setHello("Hello, world!", st);
+			setHello("Hello, world!", rst);
 		}
 	}
 ```
@@ -51,12 +51,12 @@ This method is not convenient if you use a lot of variables. In that case, you c
 		let [st, rst] = useState(0);
 		useStorageSubscribe("Test", ["hello", "user"], rst);
 
-		let [hello, setHello] = useStorage("hello", "Hello");
-		let [user, setUser] = useStorage("user", "");
+		let [hello, setHello] = useStorage("hello", "Hello", true);
+		let [user, setUser] = useStorage("user", "", true);
 
 		if(user===""){
 			setUser("John Doe");
-		}else{
+		}else if(hello=="hello"){
 			setHello("Hello, "+user+"!");
 		}
 	}
