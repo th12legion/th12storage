@@ -1,6 +1,6 @@
 {
   "name": "th12storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React State Manager",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "url": "git+https://github.com/th12legion/th12storage.git"
   },
   "keywords": [
-    "React", "State", "Manager"
+    "React",
+    "State",
+    "Manager"
   ],
   "author": "th12legion",
   "license": "ISC",
